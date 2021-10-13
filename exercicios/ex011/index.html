@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>*
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>´Midias dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+   <picture>
+           <source media="(min-width:925px )" srcset="imagens/G.png">
+           <source media="(min-width:625px )" srcset="imagens/M.png">
+           <img src="imagens/P.png" alt="">
+    </picture><br>
+    <!--como colocar um audio-->
+    <audio src="midia/Sunny-Days-AnnoDomini-Beats.mp3"  controls loop  preload="metadata"></audio><br>
+    <!--os formatos de audio:(MP3== mpeg)(WAV== wav)(OGG== ogg)-->
+    <audio controls loop preload="metadata">
+        <source src="midia/Lofi-Mallet-Kwon.mp3" type="audio/mpeg">
+    <!--quando for colocar um audio coloque nos tres tipos (MP3,OGG,WAV) -->
+        <source src="midia/Lofi-Mallet-Kwon.ogg" type="audio/ogg">
+        <source src="midia/Lofi-Mallet-Kwon.png" type="audio/wav">
+        <P> infelismente seu navegador não pode reproduzir áudio.</P>
+    </audio><br>
+</body>
+</html>
+
+
+ 
