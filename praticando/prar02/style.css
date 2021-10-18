@@ -1,0 +1,74 @@
+@charset "utf8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{/* Color Theme Swatches in Hex */
+--cor1: #262401; 
+--cor2: #8C7503; 
+--cor3: #594B02; 
+--cor4: #736F5F; 
+--cor5: #BFB8A3; 
+--cor6: #ffffff;
+}
+
+body{
+    font:normal 1em arial,helvetica,sans-serif ;
+    background: var(--cor5);
+}
+
+header{
+    background: var(--cor2);
+    color: var(--cor6);
+    padding: 10px;
+    text-align: center;
+}
+
+header > h2{ 
+    max-width: 500px;
+    margin: auto;
+}
+
+nav{
+    text-align: left;
+    background: var(--cor3);
+    margin: 15px -10px -10px -10px;
+    padding: 10px;
+    font-size: 1.1em;
+}
+ 
+nav>a{
+    padding: 5px 7px;
+    margin-right: 10px;
+    color: var(--cor6);
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav a:hover{
+    text-decoration: underline;
+    background: #8C7503;
+}
+
+article{
+    background: var(--cor6);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: var(--cor3);
+    color: var(--cor6);
+}
