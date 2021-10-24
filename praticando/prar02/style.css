@@ -5,17 +5,17 @@
     padding: 0px;
 }
 :root{/* Color Theme Swatches in Hex */
---cor1: #262401; 
---cor2: #8C7503; 
---cor3: #594B02; 
---cor4: #736F5F; 
---cor5: #BFB8A3; 
+--cor1: #BFF205; 
+--cor2: #83A603; 
+--cor3: #465902; 
+--cor4: #95ad3e; 
+--cor5: #797979; 
 --cor6: #ffffff;
 }
 
 body{
     font:normal 1em arial,helvetica,sans-serif ;
-    background: var(--cor5);
+    background: var(--cor4);
 }
 
 header{
@@ -34,13 +34,13 @@ nav{
     text-align: left;
     background: var(--cor3);
     margin: 15px -10px -10px -10px;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
 }
  
 nav>a{
     padding: 5px 7px;
-    margin-right: 10px;
+    margin-right: 30px;
     color: var(--cor6);
     text-decoration: none;
     border-radius: 5px;
@@ -50,11 +50,44 @@ nav a:hover{
     background: #8C7503;
 }
 
+main{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+  section{
+      background: var(--cor5);
+      max-width: 750px;
+      min-width: 450px;
+      padding: 1px;
+      margin: 10px;
+      border-radius: 15px;
+  }
+
 article{
     background: var(--cor6);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+aside{
+    max-width: 500px;
+    min-width: 300px;
+    background: var(--cor5);
+    padding: 1px;
+    margin: 10px;
+    border-radius: 15px;
+}
+@media (max-width: 800px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        max-width: 750px;
+    }
 }
 
 
@@ -66,9 +99,6 @@ article{
 footer{
     text-align: center;
     padding: 10px;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
     background-color: var(--cor3);
     color: var(--cor6);
 }
