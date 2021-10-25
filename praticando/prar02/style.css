@@ -6,23 +6,24 @@
 }
 :root{/* Color Theme Swatches in Hex */
 --cor1: #BFF205; 
---cor2: #83A603; 
+--cor2: #688500; 
 --cor3: #465902; 
 --cor4: #95ad3e; 
---cor5: #797979; 
+--cor5: #838383; 
 --cor6: #ffffff;
+--cor7: #d0e0b6;
 }
 
 body{
     font:normal 1em arial,helvetica,sans-serif ;
-    background: var(--cor4);
+    background: var(--cor7);
 }
 
 header{
-    background: var(--cor2);
-    color: var(--cor6);
+    color: #ffffff;
     padding: 10px;
     text-align: center;
+    background-image: linear-gradient(var(--cor2) 40%,var(--cor7));
 }
 
 header > h2{ 
@@ -57,11 +58,12 @@ main{
 }
 
   section{
-      background: var(--cor5);
+      background: var(--cor2);
       width: 70%;
       padding: 1px;
       margin: 10px;
       border-radius: 15px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
   }
 
 article{
@@ -72,11 +74,12 @@ article{
 }
 
 aside{
-    background: var(--cor5);
+    background: var(--cor2);
     width: 30%;
     padding: 1px;
     margin: 10px;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
 }
 @media (max-width: 880px) {
     main{
@@ -84,6 +87,7 @@ aside{
         grid-template-columns:1fr;
         ruby-align: center;
     }
+
     aside{
         width: 95.5%;
         margin: 10px auto;
